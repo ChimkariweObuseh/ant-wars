@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(115, 91, 51);
+}
+
+canvas {
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+}
+
+.stats {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-family: "VT323", monospace;
+    font-size: 20px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.winner {
+    display: none;
+}
+
+button {
+    background: rgba(115, 91, 51, 0.5);
+    color: rgb(255, 255, 255);
+    font-family: "VT323", monospace;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.speeddesc {
+    margin-top: 15px;
+}
+
+.speed {
+    -webkit-appearance: none;
+      width: 50%;
+      height: 7.5px;
+      background: #d3d3d3;
+      outline: none;
+      border: 2.5px solid rgba(115, 91, 51, 0.5);
+      border-radius: 4px;
+}
+
+
+/* for chrome/safari */
+.speed::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 30px;
+  background: #d3d3d3;
+  cursor: pointer;
+  border: 2.5px solid rgba(115, 91, 51, 0.5);
+  border-radius: 4px;
+}
+
+/* for firefox */
+.speed::-moz-range-thumb {
+  width: 10px;
+  height: 30px;
+  background: #d3d3d3;
+  cursor: pointer;
+  border: 2.5px solid rgba(115, 91, 51, 0.5);
+  border-radius: 4px;
+}
+
+.strengthlist {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: "VT323", monospace;
+}
